@@ -1,24 +1,21 @@
 import requests
+import sys
 from tools import *
 
+username = sys.argv[1]
+print('Username: ' + username)
 
 # cd to the directory of this file
 import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-# read the settings.cfg file
-settings = Settings()
-with open('./data/settings.cfg') as f:
-    lines = f.readlines()
-    for line in lines:
-        line = line.strip()
-        if not line.startswith('#'):
-            line = line.split('=')
-            line[1] = line[1].split(':')
-            print(line)
-        
+# read the cfg files
+settings = Settings('./data/settings.cfg')
+sites = Sites('./data/sites.cfg')
 
-# read the sites.cfg file
-with open('./data/sites.cfg') as f:
-    pass
+# get the list of sites to check
+
+
+
+
 
