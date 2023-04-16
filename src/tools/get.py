@@ -3,15 +3,13 @@ import webbrowser
 import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-existing_account = "https://www.chess.com/member/necrownnyx"
-non_existing_account = "https://www.chess.com/member/necrownyx"
+existing_account = ""
+non_existing_account = ""
 
 r1 = requests.get(existing_account)
 r2 = requests.get(non_existing_account)
 
-print(r1.text)
-for i in range(0, 100): print('.')
-print(r2.text)
+print(r1.status_code, r2.status_code)
 
 # save the output of this script to a file
 # and open it in a browser to see the difference
