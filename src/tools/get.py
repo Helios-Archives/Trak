@@ -3,8 +3,8 @@ import webbrowser
 import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-existing_account = "https://github.com/Necrownyx"
-non_existing_account = "https://github.com/Necrownyx367354"
+existing_account = "https://www.chess.com/member/necrownnyx"
+non_existing_account = "https://www.chess.com/member/necrownyx"
 
 r1 = requests.get(existing_account)
 r2 = requests.get(non_existing_account)
