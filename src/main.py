@@ -2,8 +2,8 @@ import requests
 import sys
 from tools import *
 
-username = sys.argv[1]
-print('Username: ' + username)
+try: username = sys.argv[1]; print('Username: ' + username)
+except: username = input('Username: ')
 
 # cd to the directory of this file
 import os
