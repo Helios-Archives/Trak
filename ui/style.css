@@ -1,5 +1,5 @@
 @import url('https://rsms.me/inter/inter.css');
- :root {
+ article {
 	 --color-light: white;
 	 --color-dark: #212121;
 	 --color-signal: #fab700;
@@ -48,7 +48,7 @@
 }
  .l-design-widht {
 	 max-width: 40rem;
-	 padding: 1rem;
+	 padding: 0px;
 }
  .input {
 	 position: relative;
@@ -114,5 +114,37 @@ article {
     /*make it centred on x and y axis*/
     margin: auto;
     /*make it in the middle of the screen*/
-    margin-top: 5%;
+    margin-top: 0%;
+    overflow: none;
+    background-color: none;
+}
+
+.output {
+    background: var(--color-background);
+    padding: calc(4 * var(--size-bezel));
+    /* see through margin*/
+    margin-top: calc(4 * var(--size-bezel));
+    border-radius: var(--size-radius);
+    border: 3px solid var(--color-shadow, currentColor);
+    box-shadow: 0.5rem 0.5rem 0 var(--color-shadow, currentColor);
+    height: 45%;
+}
+
+.big {
+    height: 55%;
+    resize: none;
+    word-wrap: none;
+    font: 1em/1em 'Inter', sans-serif;
+}
+
+.backround {
+    height: 100%;
+    width: 100%;
+    z-index: -20;
+    image-resolution: 300dpi;
+    position: fixed;
+    padding: 0%;
+    margin: 0%;
+    top: 0px;
+    left: 0px;
 }
