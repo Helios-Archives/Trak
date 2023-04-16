@@ -3,8 +3,8 @@ import webbrowser
 import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-existing_account = ""
-non_existing_account = ""
+existing_account = "https://snapchat.com/add/teamsnapchat"
+non_existing_account = "https://snapchat.com/add/teamsnapchat123"
 
 r1 = requests.get(existing_account)
 r2 = requests.get(non_existing_account)
