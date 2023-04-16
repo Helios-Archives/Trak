@@ -10,3 +10,10 @@ class Sites:
                     line = line.split(' | ')
                     line[1] = line[1].split(',')
                     self.sites.append(line)
+    
+    def removeSites(self, exclude):
+        for site in self.sites:
+            for key in exclude:
+                if key in site[0]:
+                    self.sites.remove(site)
+                    break
