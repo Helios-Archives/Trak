@@ -1,1 +1,1 @@
-print("Test")
+from .settings import Settings
