@@ -1,5 +1,5 @@
 # Trak
-## Project Still in develoment expect large changes
+## Project not in development if you wish to take over the development message me on telegram @nyxqxx
 
 ## Contribution
 If you wish to become a contributer on this project you can by adding a new site to the sites.cfg file. The format is as follows:
